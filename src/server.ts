@@ -9,12 +9,11 @@ async function main() {
   try {
     mongoose.connect(config.database_url as string);
     server = app.listen(config.port, () => {
-      console.log("hello");
+      console.log("Server is up and runnig.....");
     });
   } catch (err) {
     console.log(err);
   }
 }
 
-
-main()
+main();
